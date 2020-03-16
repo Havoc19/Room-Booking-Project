@@ -1,0 +1,8 @@
+{% extends "slot/base.html" %}
+{% block content %}
+    {% for info in infos %}
+        <h1>Hotel name:{{info.name}}</h1>
+        <p>Room No.{{info.number}} beds {{info.beds}}</p>
+        <p>Booking on {{info.date}}</p>
+    {% endfor %}
+{% endblock content %}
